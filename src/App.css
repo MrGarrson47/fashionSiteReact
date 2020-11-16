@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+header {
+  background: black;
+}
+header h1 {
+  color: white;
+}
+nav {
+  background: black;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 6vw;
+  font-weight: 900;
+}
+ul li, Link {
+  text-decoration: none;
+  color: white;
+  }
+.imgConFlex {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.imgCon {
+  width: 30%;
+}
+.imgConFlex img {
+  display: block;
+  width: 100%;
+}
+.categoryCon {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+}
+.categoryHeading {
+  display: block;
+  width: 50%;
+  font-size: 5vw;
+  font-weight: 900;
+  color: white;
+  background: black;
+  padding: 1vw;
+  text-align: center;
+}
+.conFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img {
+  width: 100%;
+}
+.card {
+  width: 30%;
+}
+.filterBtnText {
+  position: fixed;
+  top: 15vw;
+  left: 0;
+  width: 6vw;
+  height: 6vw;
+  font-weight: 900;
+  padding: 2vw;
+  color: white;
+  background: black;
+  border-radius: 1000px;
+  text-align: center;
+}
+.filterCon {
+  position: fixed;
+  top: 15vw;
+  left: 0;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  background: red;
+  font-weight: 900;
+  font-size: 3vw;
+  padding: 4vw;
+  transition: opacity 400ms, transform 400ms;
+}
+.priceLeft, .priceRight {
+  width: 12vw;
+  height: 4vw;
+  font-weight: 900;
+}
+.filterCon input {
+  width: 3vw;
+  height: 3vw;
+}
+.filterXBtn {
+  position: absolute;
+  top: 0;
+  right: 1vw;
+  background: white;
+  font-weight: 900;
+  border-radius: 30%;
+  padding: 1vw 2vw;
+}
+.searchFilterBtn, .resetFilterBtn {
+  width: fit-content;
+  padding: 1vw 2vw;
+  background: black;
+  font-weight: 900;
+  font-size: 2vw;
+  color: white;
+  border-radius: 1000px;
+}
+.filterConBtns {
+  display: flex;
+}
+.revealFilterCon {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0);
+}
+.cartPic {
+  width: 100%;
+  pointer-events: none;
+}
+.cartBtn {
+  position: fixed;
+  top: 0;
+  right: 1vw;
+  width: 5vw;
+  height: 5vw;
+  border-radius: 1000px;
+  background: yellow;
+  padding: 1vw;
+  z-index: 2;
+}
+.cartCon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  transform: translateX(50%);
+  background: red;
+  opacity: 0;
+  pointer-events: none;
+  overflow-y: scroll;
+  transition: opacity 400ms, transform 400ms;
+  z-index: 5;
+}
+.cartXBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: black;
+  color: white;
+  font-weight: 900;
+  padding: 1vw 2vw;
+  border-radius: 30%;
+}
+.revealCart {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateX(0);
+}
+.cartTotal {
+  background: white;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  font-size: 5vw;
+}
+.cartConBtnsCon {
+  display: flex;
+}
+.cartClearBtn, .cartUpdateTotalBtn {
+  color: white;
+  background: green;
+  padding: 1vw 2vw;
+  width: fit-content;  
+  margin: 0 auto;
+}
+.addToCartBtn {
+  width: fit-content;
+  background: green;
+  padding: 1vw 2vw;
+  color: white;
+  font-size: 4vw;
+  font-weight: 900;
+}
+.cartItemCon {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+.cartItem {
+  background: black;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  padding: 1vw;
+}
+.cartItemXBtn {
+  background: white;
+  font-weigth: 900;
+  padding: 1vw;
+  text-align: center;
+}
+.homeDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50vh;
+  background: black;
+}
+.homeDiv::before, .homeDiv::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: red;
+  width: 100%;
+  height: 10%;
+  
+}
+.homeDiv::before {
+  top: 0;
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 75% 65%, 50% 100%, 20% 65%, 0 100%, 0 35%, 0 0);
+}
+.homeDiv::after {
+  bottom: 0;
+  clip-path: polygon(50% 0, 75% 30%, 100% 0, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0 70%, 0 0 , 25% 30%);
+}
+.homeH1, .homeH2 {
+  text-align: center;
+  color: white; 
+}
