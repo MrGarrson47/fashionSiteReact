@@ -43,7 +43,7 @@ const images = [
   {name: "shirtM40", category: "men", sub_category: "shirts", url: "../assets/images (2)/men/shirts/shirts40.jpg", price: 400, brand: 4},
   
   //MENS PANTS 
-  {name: "pantsM1", category: "men", sub_category: "pants", url: "../assets/images (2)/men/pants/pants1.jpg", price: 100, brand: 1},
+  {name: "pantsM1", category: "men", sub_category: "pants", url: "/images/men/pants/pants1.jpg", price: 100, brand: 1},
   {name: "pantsM2", category: "men", sub_category: "pants", url: "../assets/images (2)/men/pants/pants2.jpg", price: 100, brand: 1, sale: true},
   {name: "pantsM3", category: "men", sub_category: "pants", url: "../assets/images (2)/men/pants/pants3.jpg", price: 100, brand: 2, sale: true},
   {name: "pantsM4", category: "men", sub_category: "pants", url: "../assets/images (2)/men/pants/pants4.jpg", price: 100, brand: 2},

@@ -93,7 +93,7 @@ const [filteredImages, setFilteredImages] = useState(props.images);
             <h1>Men Shirts Page</h1>
             <div className='conFlex'>
                 {filteredImgs.map(item=> 
-                <div className='card'>
+                <div key={item.name} className='card'>
                     <Link to={`/productPage/${item.name}`}>
                     <div className='cardImg'>
                         <img className='img' src={item.url} alt={item.name}/>

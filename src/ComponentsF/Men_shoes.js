@@ -95,7 +95,7 @@ function sortByFilter(e){
             <h1>Men Shoes Page</h1>
             <div className='conFlex'>
                 {filteredImgs.map(item=> 
-                <div className='card'>
+                <div key={item.name} className='card'>
                     <Link to={`/productPage/${item.name}`}>
                     <div className='cardImg'>
                         <img className='img' src={item.url} alt={item.name}/>
